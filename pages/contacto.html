@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacto</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="../imagenes/favicon-32x32.png">
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+
+</head>
+<body>
+
+
+<header> <!--Cabecera-->
+
+	<!--Menú principal-->
+	<nav class="principal">
+	
+		
+		<ul >
+			<li class="liImagen"><a class="inicio" href="../index.html"><img src="../imagenes/logo2.PNG"   width="52px" height="52px" alt=""></a></li>
+			<li><a href="Servicios.html">Servicios</a></li>
+			<li><a href="../index.html#metodologia">Metodología</a></li>
+			<li><a href="Alianzas.html">Alianzas</a></li>
+			<li><a href="../index.html#clientes">Clientes</a></li>
+			<li><a href="Nosotros.html">Nosotros</a></li>
+			<li><a href="Contacto.html">Contacto</a></li>
+
+			<li><a href=""><ion-icon  name="logo-facebook"></ion-icon></a></li>
+			<li><a href=""><ion-icon  name="logo-youtube"></ion-icon></a></li>
+			<li><a href=""><ion-icon  name="logo-linkedin"></ion-icon></a></li>
+				
+			<li > <span> <ion-icon name="call"></ion-icon> +59826006555 </span></li>
+			<li ><span> <ion-icon name="mail"></ion-icon> info@devopuy.com </span></li>
+			<li ><span> <ion-icon name="time"></ion-icon> Lun a vie de 9 a 17 </span></li>
+  		</ul>
+	</nav>
+	
+	
+</header>
+<main> 
+
+	<h1>
+		Formulario de contacto
+	</h1>
+	<section class="formulario">
+		<div> <!--Formulario de contacto-->
+			<form action="envia.php" method="POST" id="formulario" enctype="multipart/form-data"> 
+				<fieldset >
+					<legend>Envía tu consulta</legend>
+					<label for="nombreyapellido">Nombre y apellido</label>
+					<input type="text" name="nombreyapellido" maxlength="100"><br><br>
+					<label for="correo">Correo electrónico</label>
+					<input type="text"><br><br>
+					<textarea name="" id="caja" cols="30" rows="10" placeholder="Escribe aquí su consulta"> </textarea><br><br>
+					<h4>Selecciona el servicio:</h4>
+					<select name="autores">
+						<option value="SP">Soporte</option>
+						<option value="CS">Consultoria</option>
+						<option value="DS">Desarrollo</option>
+					</select>
+					<br><br>
+					<label>Tecnico</label>
+					<input type="radio" name="sexo" value="Masculino">
+					<label>Comercial</label>
+					<input type="radio" name="sexo" value="Femenino">
+					<br><br>
+					<input type="checkbox" name="autorindependiente" value="1"><label>No soy un robot</label><br><br>
+					<input type="submit" name="submit" value="Enviar">
+					<input type="reset" name="reset" value="Limpiar">
+					<br>
+				</fieldset>
+			</form>
+		</div>
+		<div> <!--Mapa de Google-->
+			<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=montevideo,%20uruguauy&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-a.com"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+		</div>
+	</section>
+		
+			
+	<section class="btn-whatsapp"><!-- Botón de WhatsApp que acompaña en todo el sitio-->
+		
+		<a href="https://api.whatsapp.com/send?phone=59899110835" target="_blank">
+		<img src="imagenes/btn_whatsapp.png" alt="">
+		</a>
+		
+		<hr>
+	</section>
+</main>
+
+<footer> 
+	<section class="pie"><!--Autor y redes-->
+		<hr>
+		<p class="pie__p">Desarrollado por Juan Barrios. Todos los derecho reservados
+			
+			<a class="iconos-azules" href="#">
+				<ion-icon  name="logo-facebook"></ion-icon>
+				</a>
+			
+			<a class="iconos-rojos" href="#">
+					<ion-icon  name="logo-youtube"></ion-icon>
+				</a>
+			
+			<a href="#" class="iconos-azules">
+					<ion-icon  name="logo-linkedin"></ion-icon>
+				</a>
+		</p>
+	</section>
+</footer>
+
+</body>
+</html>
