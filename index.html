@@ -4,42 +4,62 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>DevopsUY</title>
+
+	<!--Hojas de estilos-->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+
+	<!--Fonts-->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon-32x32.png">
-<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+
+	<!--Favicon del sitio-->
+	<link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon-32x32.png">
+
+	<!--ÍCONOS-->
+	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
 
 </head>
 <body>
 
 
 <header> 
-
-	<nav class="principal"><!--Menú principal-->
-		<ul >
-		  <li class="liImagen"><a class="inicio" href="index.html"><img src="imagenes/logo2.PNG"   width="52px" height="52px" alt=""></a></li>
-		  <li><a href="pages/servicios.html">Servicios</a></li>
-		  <li><a href="index.html#metodologia">Metodología</a></li>
-		  <li><a href="pages/alianzas.html">Alianzas</a></li>
-		  <li><a href="index.html#clientes">Clientes</a></li>
-		  <li><a href="pages/nosotros.html">Nosotros</a></li>
-		  <li><a href="pages/contacto.html">Contacto</a></li>
-
-		  <li><a href=""><ion-icon  name="logo-facebook"></ion-icon></a></li>
-		  <li><a href=""><ion-icon  name="logo-youtube"></ion-icon></a></li>
-		  <li><a href=""><ion-icon  name="logo-linkedin"></ion-icon></a></li>
-			
-		  <li > <span class="datosEmpresa"> <ion-icon name="call"></ion-icon> +59826006555 </span></li>
-		  <li ><span> <ion-icon name="mail"></ion-icon> info@devopuy.com </span></li>
-		  <li ><span> <ion-icon name="time"></ion-icon> Lun a vie de 9 a 17 </span></li>
-  		</ul>
-	</nav>
+	
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="#"><img src="imagenes/logotransparente.png" width="200" height="60" class="d-inline-block align-top" alt=""></a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item"><a class="nav-link" href="pages/servicios.html">Servicios</a></li>
+				<li class="nav-item"><a class="nav-link" href="index.html#metodologia">Metodología</a></li>
+				<li class="nav-item"><a class="nav-link" href="pages/alianzas.html">Alianzas</a></li>
+				<li class="nav-item"><a class="nav-link" href="index.html#clientes">Clientes</a></li>
+				<li class="nav-item"><a class="nav-link" href="pages/nosotros.html">Nosotros</a></li>
+			  	<li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+				
+				
+			  
+			</ul>
+			<div class="d-flex">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item"><a href=""><ion-icon class="nav-link"  name="logo-facebook"></ion-icon></a></li>
+				<li class="nav-item"><a href=""><ion-icon class="nav-link"  name="logo-youtube"></ion-icon></a></li>
+				<li class="nav-item"><a href=""><ion-icon class="nav-link"  name="logo-linkedin"></ion-icon></a></li>
+			</ul>
+			</div>
+		  </div>
+		</div>
+	  </nav>	
 	
 </header>
 
 <main> 
+	
 	
 	<section id="portada"> <!--Portada principal del sitio-->
 			<div id="content">
@@ -51,10 +71,11 @@
 						<p>
 							Nos dedicamos a entender la necesidad del cliente para resolver obstáculos y desafíos en tiempo y forma. Somos un equipo joven con experiencia en el ámbito informático, orientado a crecer y dinamizar los requerimientos del negocio.
 						</p>
-						<a href="pages/contacto.html" class="bgColorVerde colorBlanco typeR button">Contáctanos</a>
+						<a href="pages/contacto.html" class="btn">Contáctanos</a>
 					</div>
 				</div>
 			</div>
+			<br>
 	</section>
 
 	
@@ -62,66 +83,77 @@
 			<h1>
 				Servicios Principales
 			</h1>
-			<div class="serviciosIndex">
 
-				<div class="gallery">
-					<a target="_blank" href="pages/Servicios.html#infra">
-					<img src="imagenes/infra.jpg" alt="Infraestructura" width="600" height="400">
-					</a>
-					<div class="desc">Infraestructura</div>
-				</div>
-				
+				<div class="serviciosPrincipales d-flex flex-row justify-content-center flex-wrap">
+
+					<div class="card" style="width: 18rem;">
+						<img src="imagenes/infra.jpg" class="card-img-top" width="286" height="190" alt="...">
+						<div class="card-body">
+						<h5 class="card-title">Infraestructura</h5>
+						<p class="card-text">Nivel 1, 2 y 3 tanto en sistemas Microsoft como en Linux.</p>
+						<a href="pages/Servicios.html#infra" class="btn">Ver mas</a>
+						</div>
+					</div>
+					<div class="card" style="width: 18rem;">
+						<img src="imagenes/soporte.jpg" class="card-img-top" width="286" height="190" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Soporte</h5>
+							<p class="card-text">Implementación o migración de servicios en la nube.</p>
+							<a href="pages/Servicios.html#soporte" class="btn">Ver mas</a>
+						</div>
+					</div>
+					<div class="card" style="width: 18rem;">
+						<img src="imagenes/cloud.jpg" class="card-img-top" width="286" height="190" alt="...">
+						<div class="card-body">
+						<h5 class="card-title">Cloud Computing</h5>
+						<p class="card-text">Implementación o migración de servicios en la nube.</p>
+						<a href="pages/Servicios.html#cloud" class="btn">Ver mas</a>
+						</div>
+					</div>
+					<div class="card" style="width: 18rem;">
+						<img src="imagenes/consultoria.jpg" class="card-img-top" width="286" height="190" alt="...">
+						<div class="card-body">
+						<h5 class="card-title">Consultoría</h5>
+						<p class="card-text">Asesoramiento en decisiones importantes sobre proyectos.</p>
+						<a href="pages/Servicios.html#consultoria" class="btn">Ver mas</a>
+						</div>
+					</div>
+					<div class="card" style="width: 18rem;">
+						<img src="imagenes/desarrollo.jpg" class="card-img-top" width="286" height="190" alt="...">
+						<div class="card-body">
+						<h5 class="card-title">Desarrollo de software</h5>
+						<p class="card-text">Software a la medida de sus necesidades y multiplataforma.</p>
+						<a href="pages/Servicios.html#desarrollo" class="btn">Ver mas</a>
+						</div>
+					</div>
 					
-				<div class="gallery">
-						<a target="_blank" href="pages/Servicios.html#soporte">
-						<img src="imagenes/soporte.jpg" alt="Soporte" width="600" height="400">
-						</a>
-						<div class="desc">Soporte</div>
+					<div class="card" style="width: 18rem;">
+						<img src="imagenes/seguridad.jpg" class="card-img-top" width="286" height="190" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Seguridad</h5>
+							<p class="card-text">Buen uso de respaldos, buenas prácticas, controles y otros.</p>
+							<a href="pages/Servicios.html#Seguridad" class="btn">Ver mas</a>
+						</div>
+					</div>
+					<div class="card" style="width: 18rem;">
+						<img src="imagenes/web.jpg" class="card-img-top" width="286" height="190" alt="...">
+						<div class="card-body">
+						<h5 class="card-title">Páginas webs</h5>
+						<p class="card-text">Sitios web adaptables a las necesidades de su empresa.</p>
+						<a href="pages/Servicios.html#web" class="btn">Ver mas</a>
+						</div>
+					</div>
+					<div class="card" style="width: 18rem;">
+						<img src="imagenes/fe.jpg" class="card-img-top" width="286" height="190" alt="...">
+						<div class="card-body">
+						<h5 class="card-title">Facturación electrónica</h5>
+						<p class="card-text">Contamos con varias opciones según sus necesidades.</p>
+						<a href="pages/Servicios.html#fe" class="btn">Ver mas</a>
+						</div>
+					</div>
 				</div>
 				
-				<div class="gallery">
-						<a target="_blank" href="pages/Servicios.html#cloud">
-						<img src="imagenes/cloud.jpg" alt="Cloud" width="600" height="400">
-						</a>
-						<div class="desc">Cloud Computing</div>
-				</div>
 				
-				<div class="gallery">
-					<a target="_blank" href="pages/Servicios.html#consultoria">
-					<img src="imagenes/consultoria.jpg" alt="Consultoria" width="600" height="400">
-					</a>
-					<div class="desc">Consultoría</div>
-				</div>
-			
-				<div class="gallery">
-						<a target="_blank" href="pages/Servicios.html#desarrollo">
-						<img src="imagenes/desarrollo.jpg" alt="Desarrollo" width="600" height="400">
-						</a>
-						<div class="desc">Desarrollo de Software</div>
-				</div>
-			
-				<div class="gallery">
-						<a target="_blank" href="pages/Servicios.html#Seguridad">
-						<img src="imagenes/seguridad.jpg" alt="Seguridad" width="600" height="400">
-						</a>
-						<div class="desc">Seguridad</div>
-				</div>
-			
-				<div class="gallery">
-						<a target="_blank" href="pages/Servicios.html#web">
-							<img src="imagenes/web.jpg" alt="Web" width="600" height="400">
-						</a>
-						<div class="desc">Paginas web</div>
-				</div>
-				
-				<div class="gallery">
-					<a target="_blank" href="pages/Servicios.html#fe">
-					<img src="imagenes/fe.jpg" alt="Facturación" width="600" height="400">
-					</a>
-					<div class="desc">Facturación electrónica</div>
-				</div>
-			</div>			
-			<div class="clearfix"></div>
 			
     </section>
 	
@@ -140,6 +172,7 @@
 				</div>
 			</div>
 		</div>
+		<br>
 	</section>
 		
 	<section id="clientes">	<!--Clientes: cuales son y qué dicen-->
@@ -192,6 +225,13 @@
 		</p>
 	</section>
 </footer>
+
+<!-- BOOTSTRAP LIKNS DINÁMICOS -->
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<script src="js/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 
 </body>
 </html>

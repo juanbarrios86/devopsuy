@@ -5,15 +5,22 @@ h1{
   border-radius: 100px;
   text-align: center;
   animation-duration: 2s;
+  font-size: 28px;
   animation-name: aparecer;
   animation-iteration-count: initial;
+  margin: 0px 0px 8px;
 }
 h2 {
 	color: #03A64A;
 	font-weight: 1px;
+  margin: 20px;
+  font-size: 24px;
+
 }
 
-
+#clientes{
+  margin: 10px;
+}
 /* Boton Whatsapp */
 
 .btn-whatsapp {
@@ -39,7 +46,7 @@ nav.principal ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 98%;
+  width: 100%;
   overflow: hidden;
   background-color: #0D2C40;
   position: fixed;
@@ -408,4 +415,45 @@ footer{
   100% {
     opacity: 1;
   }
+}
+
+/* Retoques de Bootstrap */
+
+.btn{
+  background-color: #03A64A;
+  color: white;
+}
+.btn:hover{
+  background-color: #1dd66d;
+  color: white;
+}
+.container-fluid{
+  background-color: #0D2C40;
+  padding: 0;
+}
+.navbar-brand{
+  background-color: #1dd66d;
+  padding: 0;
+}
+.nav-link{
+  color:white !important;
+  font-family: 'Bangers', cursive;
+  margin: 10px;
+}
+.navbar-toggler-icon{
+  background-color: #1dd66d;
+}
+.navbar-toggler{
+  background-color: #1dd66d;
+}
+.navbar{
+  padding: 0;
+  opacity: 0.95;
+}
+
+.navbar-toggler{
+  margin: 10px;
+}
+.card{
+  margin: 10px;
 }
