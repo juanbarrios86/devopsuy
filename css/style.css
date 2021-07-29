@@ -1,24 +1,4 @@
 @charset "UTF-8";
-/* Definición de los H*/
-h1 {
-  color: #03A64A;
-  background-color: #0D2C40;
-  border-radius: 100px;
-  text-align: center;
-  animation-duration: 2s;
-  font-size: 28px;
-  animation-name: aparecer;
-  animation-iteration-count: initial;
-  margin: 0px 0px 8px;
-}
-
-h2 {
-  color: #03A64A;
-  font-weight: 1px;
-  margin: 20px;
-  font-size: 24px;
-}
-
 #clientes {
   margin: 10px;
 }
@@ -155,7 +135,7 @@ div.desc {
 /* Iconos de las redes */
 .iconos-azules {
   text-decoration: none;
-  color: blue;
+  color: #0D2C40;
 }
 
 .iconos-rojos {
@@ -176,10 +156,11 @@ div.desc {
 .typeR {
   font-family: "Montserrat", sanss-serif;
   font-weight: 400;
+  font-size: larger;
+  color: white;
 }
-
-.typeR.bold {
-  font-weight: 700;
+.typeR .typeR.bold {
+  font-weight: 700 !important;
 }
 
 .bgColorBlack {
@@ -283,11 +264,38 @@ div.desc {
 /* Definición de grid */
 body {
   display: grid;
+  height: 100vh;
   grid-template-columns: auto;
   grid-template-rows: auto;
   grid-template-areas: "header" "main" "footer";
   grid-row-gap: 10px;
   font-family: "Montserrat", sans-serif;
+  /* Definición de los H*/
+}
+body h1 {
+  text-align: center;
+  animation-name: aparecer;
+  animation-iteration-count: initial;
+  animation-duration: 2s;
+}
+body h2 {
+  color: #03A64A;
+  background-color: #0D2C40;
+  border-radius: 100px;
+  text-align: center;
+  font-size: 28px;
+  margin: 0px 0px 8px;
+}
+body h3 {
+  color: #03A64A;
+  font-weight: 1px;
+  margin: 20px;
+  font-size: 24px;
+}
+
+.tituloPrincipal {
+  color: #0D2C40;
+  font-weight: 700 !important;
 }
 
 header {
@@ -306,68 +314,6 @@ footer {
 .containerGaleria {
   width: 60%;
   margin: 2rem auto;
-}
-
-/* Galería de imagenes con Grid*/
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 5vw);
-  grid-gap: 1.5rem;
-}
-@media (max-width: 500px) {
-  .galeria {
-    font-size: smaller;
-  }
-}
-
-.galeria__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.galeria__item1 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-.galeria__item2 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-.galeria__item3 {
-  grid-column-start: 5;
-  grid-column-end: 9;
-  grid-row-start: 1;
-  grid-row-end: 6;
-}
-
-.galeria__item4 {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 3;
-  grid-row-end: 6;
-}
-
-.galeria__item5 {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 6;
-  grid-row-end: 9;
-}
-
-.galeria__item6 {
-  grid-column-start: 5;
-  grid-column-end: 9;
-  grid-row-start: 6;
-  grid-row-end: 9;
 }
 
 /* Hacer aparecer los titulos H1*/
@@ -424,6 +370,90 @@ footer {
 
 .card {
   margin: 10px;
+}
+
+/*Nuestro equipo*/
+.our-team {
+  padding: 20px 15px 30px;
+  background: #fff;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.our-team .pic {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 25px;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .pic {
+  background: #0D2C40;
+  border-radius: 50%;
+}
+
+.pic img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.our-team .title {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  color: #2e282a;
+  text-transform: uppercase;
+  margin: 0 0 7px 0;
+}
+
+.our-team .post {
+  display: block;
+  font-size: 15px;
+  color: #0D2C40;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.our-team .social {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.our-team .social li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.our-team .social li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 15px;
+  color: #0D2C40;
+  border: 1px solid #0D2C40;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social li a {
+  background: #0D2C40;
+  color: #fff;
+}
+
+@media only screen and (max-width: 990px) {
+  .our-team {
+    margin-bottom: 30px;
+  }
+}
+.mapa {
+  border: 1px solid #03A64A;
 }
 
 /*# sourceMappingURL=style.css.map */
