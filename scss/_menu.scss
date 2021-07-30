@@ -1,0 +1,37 @@
+/* Barra de menú*/
+
+
+nav.principal ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #0D2C40;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    opacity: 0.9;
+    top: 0; 
+    li {
+          color: white;
+                              a {
+                              display: block;
+                              padding: 1rem;
+                              text-decoration: none;
+                              color: white;
+                              text-align: center;
+                              padding: 14px 16px;
+                              font-family: 'Bangers', cursive;
+                              }
+          }
+  } 
+  
+  
+  .inicio {
+    background-color: $color1;
+  }
+  

@@ -1,0 +1,45 @@
+/* Retoques de Bootstrap */
+.form-control:focus {
+    border-color: $color1;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+  } 
+  .btn{
+    background-color: $color1;
+    color: white;
+    &:hover {
+        background-color: #1dd66d;
+    color: white;
+    }
+  }
+  .container-fluid{
+    background-color: #0D2C40;
+    padding: 0;
+  }
+  .navbar-brand{
+    background-color: #1dd66d;
+    padding: 0;
+  }
+  .nav-link{
+    color:white !important;
+    font-family: 'Bangers', cursive;
+    margin: 10px;
+  }
+  .navbar-toggler-icon{
+    background-color: #1dd66d;
+  }
+  .navbar-toggler{
+    background-color: #1dd66d;
+  }
+  .navbar{
+    padding: 0;
+    opacity: 0.95;
+  }
+  
+  .navbar-toggler{
+    margin: 10px;
+  }
+  .card{
+    margin: 10px;
+  }
+  
+  

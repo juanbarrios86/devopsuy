@@ -1,0 +1,71 @@
+/*Nuestro equipo*/
+.our-team{
+    padding: 20px 15px 30px;
+    background: #fff;
+    border-radius: 15px;
+    text-align: center;
+        .pic{
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          background: #fff;
+          padding: 10px;
+          margin-bottom: 25px;
+          transition: all 0.5s ease 0s;
+                      img{
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+              }
+        }
+        &:hover .pic{
+            background: $color2;
+            border-radius: 50%;
+          }
+  
+         .title{
+          display: block;
+          font-size: 20px;
+          font-weight: 600;
+          color: #2e282a;
+          text-transform: uppercase;
+          margin: 0 0 7px 0;
+        }      
+        .post{
+          display: block;
+          font-size: 15px;
+          color: $color2;
+          text-transform: capitalize;
+          margin-bottom: 15px;
+        }
+        .social{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+                  li{
+                  display: inline-block;
+                  margin-right: 5px;
+                        a{
+                          display: block;
+                          width: 30px;
+                          height: 30px;
+                          line-height: 30px;
+                          border-radius: 50%;
+                          text-decoration: none;
+                          font-size: 15px;
+                          color: $color2;
+                          border: 1px solid $color2;
+                          transition: all 0.5s ease 0s;
+                          &:hover{
+                            background: $color2;
+                            color: #fff;
+                          }
+                        }
+                }
+      }
+      @media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 30px; }
+  }
+  }
+  
+  
