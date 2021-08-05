@@ -13,6 +13,10 @@
   text-align: center;
   z-index: 999;
 }
+.btn-whatsapp ion-icon {
+  font-size: 64px;
+  color: #03A64A;
+}
 
 /* Barra de menú*/
 nav.principal ul {
@@ -344,7 +348,6 @@ body li a:hover {
 
 .btn {
   background-color: #03A64A;
-  color: white;
 }
 .btn:hover {
   background-color: #1dd66d;
@@ -386,6 +389,10 @@ body li a:hover {
 
 .card {
   margin: 10px;
+}
+
+.card-title {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
