@@ -1,0 +1,15 @@
+.contentList{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.contentList li{
+margin: 0 10px;
+
+}
+
+.card-text, .card-title{
+    color: black;
+    font-size: 18px;
+}
